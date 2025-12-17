@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tienda - Venta de Perfumes</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/estilos.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background:var(--primary)">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"> Perfumes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link active" href="tienda.html">Tienda</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-4">
+      <h2 class="section-title text-center">Nuestros Productos</h2>
+      <ul class="nav nav-tabs mb-3" id="categoriaTabs" role="tablist">
+        <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#fragancias" type="button">Fragancias</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#regalos" type="button">Sets y Regalos</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#accesorios" type="button">Accesorios</button></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="fragancias">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card product-card">
+                <img src="img/prod1.jpg" class="card-img-top" alt="Prod 1">
+                <div class="card-body">
+                  <h5 class="card-title">Perfume Rosa</h5>
+                  <p class="card-text">Aroma floral, 50ml</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProd1">Ver Especificaciones</button>
+                    <span class="badge bg-success">S/ 120</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card product-card">
+                <img src="img/prod2.jpg" class="card-img-top" alt="Prod 2">
+                <div class="card-body">
+                  <h5 class="card-title">Perfume Noche</h5>
+                  <p class="card-text">Aroma amaderado, 100ml</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProd2">Ver Especificaciones</button>
+                    <span class="badge bg-success">S/ 180</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card product-card">
+                <img src="img/prod3.jpg" class="card-img-top" alt="Prod 3">
+                <div class="card-body">
+                  <h5 class="card-title">Perfume Citrus</h5>
+                  <p class="card-text">Aroma cítrico, 75ml</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProd3">Ver Especificaciones</button>
+                    <span class="badge bg-success">S/ 140</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="regalos">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="img/set1.jpg" class="card-img-top" alt="Set 1">
+                <div class="card-body">
+                  <h5 class="card-title">Set Elegante</h5>
+                  <p class="card-text">Caja regalo con 2 fragancias</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn btn-outline-primary">Ver</button>
+                    <span class="badge bg-success">S/ 220</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="accesorios">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="img/accesorio1.jpg" class="card-img-top" alt="Acc 1">
+                <div class="card-body">
+                  <h5 class="card-title">Estuche</h5>
+                  <p class="card-text">Estuche viaje para perfumes</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <button class="btn btn-outline-primary">Ver</button>
+                    <span class="badge bg-success">S/ 50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="modal fade" id="modalProd1" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Perfume Rosa</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">Fragancia floral suave y elegante, ideal para el uso diario. Combina notas de rosas frescas con un fondo ligeramente dulce, aportando una sensación delicada y femenina. Recomendado para climas templados y ocasiones casuales.</div>
+            <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button><button class="btn btn-primary">Comprar</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalProd2" tabindex="-1">
+        <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Perfume Noche</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body">Fragancia intensa y sofisticada con notas amaderadas y orientales. Diseñada para ocasiones especiales y eventos nocturnos. Su aroma profundo y duradero aporta carácter, elegancia y presencia.</div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button><button class="btn btn-primary">Comprar</button></div></div></div>
+      </div>
+      <div class="modal fade" id="modalProd3" tabindex="-1">
+        <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Perfume Citrus</h5><button type="button" class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body">Fragancia fresca y energizante con notas cítricas naturales. Ideal para el día a día y climas cálidos. Aporta una sensación limpia, ligera y revitalizante, perfecta para uso continuo.</div><div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button><button class="btn btn-primary">Comprar</button></div></div></div>
+      </div>
+    </div>
+    <footer class="footer mt-4">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div>Curso de Diseño y Desarrollo Web</div>
+        <div>Evaluación Integral Isil © 2025-II</div>
+        <div>
+          <a href="#" class="me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      tooltipTriggerList.forEach(function (tooltipTriggerEl) { new bootstrap.Tooltip(tooltipTriggerEl) })
+    </script>
+  </body>
+</html>

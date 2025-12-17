@@ -1,0 +1,164 @@
+:root{
+  --primary: #0d6efd;
+  --dark: #0b2a3a;
+  --bg: #f8f9fa;
+  --text: #212529;
+  --footer-bg: #0b1720;
+  --footer-text: #ffffff;
+  --footer-link: #cbd5e1;
+  --gap: 1rem;
+  --container-max: 1200px;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.titulo-marca{
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #0b2a3a;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.navbar-brand img{
+  height: 38px;
+  display: block;
+}
+
+.hero-carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-carousel .carousel-item{
+  height: 420px;
+}
+
+.hero-carousel .carousel-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.section-title{
+  padding: 48px 0 24px;
+  text-align: center;
+}
+
+.navbar-brand{
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar-brand span{
+  font-weight: 300;
+  text-transform: none;
+}
+
+.card-feature{
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer{
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 24px 0;
+  font-size: 0.95rem;
+}
+
+.footer a{
+  color: var(--footer-link);
+  text-decoration: none;
+}
+
+.footer a:focus,
+.footer a:hover{
+  text-decoration: underline;
+}
+
+.product-card img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.contact-map{
+  height: 260px;
+  background: #e9ecef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.text-center { text-align: center; }
+.mb-3 { margin-bottom: 1rem !important; }
+.mt-3 { margin-top: 1rem !important; }
+.mt-4 { margin-top: 1.5rem !important; }
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus{
+  outline: 3px solid rgba(13,110,253,0.15);
+  outline-offset: 2px;
+}
+
+@media (max-width: 576px){
+  .hero-carousel .carousel-item{
+    height: 220px;
+  }
+
+  .hero-carousel .carousel-item img{
+    height: 220px;
+  }
+
+  .product-card img{
+    height: 160px;
+  }
+
+  .card-feature{
+    min-height: 160px;
+    padding: 1rem;
+  }
+
+  .section-title{
+    padding: 32px 0 12px;
+  }
+}
